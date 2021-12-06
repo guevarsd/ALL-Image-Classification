@@ -8,7 +8,12 @@ PyTorch, a machine learning framework, is used to implement the networks built s
 Models experimented on this dataset include VGGNet16, VGGNet19, EfficientNetB7, EfficientnetB3, EfficientnetB4, EfficientnetB5, EfficientnetB0, GoogleNet, Densenet161, DenseNet121, DenseNet169, and ResNet152.
 
 
-The dataset used for this project was obtained [through Kaggle](https://www.kaggle.com/andrewmvd/leukemia-classification), which makes available the second version of this dataset. The code for the best performing models on this project (obtaining ~77% accuracy and ~77% weighted F1-score) are included in the Code folder of the main branch. Codes for all experiements by respective team members are included in separate branches.
+
+##
+
+The code for the best performing models on this project (obtaining ~77% accuracy and ~77% weighted F1-score) are included in the Code folder of the main branch. Codes for all experiements by respective team members are included in separate branches.
+
+The dataset used for this project was obtained [through Kaggle](https://www.kaggle.com/andrewmvd/leukemia-classification), which makes available the second version of this dataset. 
 
 ##### Data Citation
 

@@ -11,7 +11,7 @@ Models experimented on this dataset include VGGNet16, VGGNet19, EfficientNetB7, 
 
 ##
 
-The code for the best performing models on this project (obtaining 77.6% accuracy and 77.6% weighted F1-score) are included in the Code folder of the main branch. Codes for all experiements by respective team members are included in separate branches. The Final_Master.py file is the base script used to start implementing our competition-style project.
+The code for the best performing models on this project (obtaining 77.6% accuracy and 77.6% weighted F1-score) are included in the Code folder of the main branch. Codes for all experiements by respective team members are included in separate branches. The Final_Master.py file in the main branch is the base script used to start implementing our competition-style project.
 
 The dataset used for this project was obtained [through Kaggle](https://www.kaggle.com/andrewmvd/leukemia-classification), which makes available the second version of this dataset. 
 

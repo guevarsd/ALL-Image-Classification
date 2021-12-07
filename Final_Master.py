@@ -44,7 +44,6 @@ LR = 0.001
 CHANNELS = 3
 IMAGE_SIZE = 100
 
-NICKNAME = "wilma"
 
 mlb = MultiLabelBinarizer()
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
@@ -134,7 +133,7 @@ def process_data(df,data_type,target_type):
 def save_model(model):
     # Open the file
 
-    print(model, file=open('summary_{}.txt'.format(NICKNAME), "w"))
+    print(model, file=open('summary.txt', "w"))
 
 def model_definition(pretrained=False):
     # Define a Keras sequential model
@@ -304,7 +303,7 @@ def train_and_test(train_ds, test_ds, list_of_metrics, list_of_agg, save_on, pre
 
         if met_test > met_test_best and SAVE_MODEL:
 
-            torch.save(model.state_dict(), "model_{}.pt".format(NICKNAME))
+            torch.save(model.state_dict(), "model.pt")
             xdf_dset_results = val_df.copy()
 
             ## The following code creates a string to be saved as 1,2,3,3,
@@ -316,7 +315,7 @@ def train_and_test(train_ds, test_ds, list_of_metrics, list_of_agg, save_on, pre
 
             xdf_dset_results['results'] = xfinal_pred_labels
 
-            xdf_dset_results.to_excel('results_{}.xlsx'.format(NICKNAME), index = False)
+            xdf_dset_results.to_excel('results.xlsx', index = False)
             print("The model has been saved!")
             met_test_best = met_test
 
